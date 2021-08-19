@@ -24,7 +24,7 @@ class HumanTrackedEventWatcher(object):
 
         session = app.session
         self.subscribers_list = []
-        self.is_speech_reco_started = False
+        self.is_speech_reco_started = True
 
         # SUBSCRIBING SERVICES
         self.tts             = session.service("ALTextToSpeech")
@@ -40,7 +40,6 @@ class HumanTrackedEventWatcher(object):
                               self.on_human_tracked)
         self.connect_callback("ALBasicAwareness/HumanLost",
                               self.on_people_left)
-
         return
 
     def connect_callback(self, event_name, callback_func):
@@ -62,8 +61,6 @@ class HumanTrackedEventWatcher(object):
             [x, y, z] = position_human
             print("The tracked person with ID", value, "is at the position:", \
                 "x=", x, "/ y=",  y, "/ z=", z)
-            msg = "Hello, welcome to the J P Morgan Innovation Showcase Space!"
-            self.pepper_speak(msg)
             self.wave_hello("Hello, welcome to the J P Morgan Innovation Showcase Space!")
 
 
@@ -163,7 +160,7 @@ class HumanTrackedEventWatcher(object):
         angles = [-0.479966, -0.561996, 0.66, 1.30202, 0.195477, -0.637045]
 
         self.motion.angleInterpolation(names, keys, times, True)
-        # self.pepper_speak(msg)
+        self.pepper_speak(msg)
         self.motion.setAngles(names2, angles, 0.3)
         return
 
