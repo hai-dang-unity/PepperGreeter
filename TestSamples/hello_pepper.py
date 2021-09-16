@@ -98,7 +98,7 @@ def main(session):
     # userArmArticular(motion_service, tts)
     hello(motion_service, tts)
 
-    print " --- Over --- "
+    print(" --- Over --- ")
     time.sleep(3)
     # Go to rest position
     motion_service.rest()
