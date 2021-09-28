@@ -1,0 +1,17 @@
+topic: ~conversation_topic()
+language: enu
+
+u: (Hi) Hi
+u: (Hello) hello
+u: (Good Morning): Morning to you too
+u: (Good Afternoon): Afternoon
+u: ([Later, See ya later]): See ya later alligator
+u: (Bye): Bye to you too
+u: (Hey): sup
+u: (what's up): hey what's up
+u: (how are you): pretty good
+u: (Good evening): Evening
+u: (Good night): night night z z z
+u: ([Say a joke, got any good jokes, Tell us a joke, tell me a joke]: What's the difference between a piano and a tuna? You can tune a piano but you can't tuna fish
+
+
