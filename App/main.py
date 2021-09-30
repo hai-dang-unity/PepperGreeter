@@ -100,6 +100,7 @@ class PepperChatBot(object):
         # if ans:
         #     print("Answer : ", ans)
         #     self._makePepperSpeak(ans)
+        self._makePepperSpeak("I did not get that")
         return
 
     def specific_question_event(self, value):
@@ -186,6 +187,8 @@ class PepperChatBot(object):
         try:
             # self.startGreeterProgram()
             print("Starting pepper program chat bot app")
+            while True:
+                time.sleep(1)
         except KeyboardInterrupt:
             print("Interrupted by user, shutting down")
             self._cleanUp()

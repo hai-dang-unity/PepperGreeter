@@ -47,10 +47,10 @@ u: ( which year is [it now] ) $specific_question_event="YEAR"
 
 u: ( what * your * name ) My name is Pepper Robot.
 
-u: ( [what tell] * your * age ) Vikram told me that I am 7 years old, but I still think I dont grow old.
-u: ( how * [old aged age] * you ) Vikram told me last time that I am 7 years old, but I still think I dont grow old.
+u: ( [what tell] * your * age ) I do not know. I believe I'm old enough to drive though. Wink.
+u: ( how * [old aged age] * you ) I do not know. I believe I'm old enough to drive though. Wink.
 
-u: ( where * you * [present located live] ) I am currently situated in Mobiliya's Pune Office
+u: ( where * you * [present located live] ) I am currently on Earth
 
 u: ( Thank you ) Welcome, Have a good day
 
@@ -60,8 +60,8 @@ u: ( Thank you ) Welcome, Have a good day
 #
 
 u: (can you register [me myself]) $register_human_event="True"
-u: (please remmeber [me myself]) $register_human_event="True"
-u: (* [remmeber register] [me myself]) $register_human_event="True"
+u: (please remember [me myself]) $register_human_event="True"
+u: (* [remember register] [me myself]) $register_human_event="True"
 
 
 
